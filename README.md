@@ -1,5 +1,3 @@
-# TA_Engineering_Web
-
 # TA Engineering Webapp
 
 This is a modern, multi-page static website for TA Engineering, built with HTML, Tailwind CSS (via CDN), and JavaScript. The project is organized for easy extension and customization.
