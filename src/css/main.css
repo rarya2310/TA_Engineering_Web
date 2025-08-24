@@ -12,6 +12,28 @@ body {
     overflow-x: hidden;
 }
 
+/* At a Glance Section - Background Image Style */
+.glance-background {
+            background-size: 100% 100%; /* Stretches the image to fill the container */
+            background-position: center;
+            background-repeat: no-repeat;
+}
+
+.card-test {
+            width: 300px; /* Or use a relative unit like 20vw */
+            height: 200px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Important for clipping the image */
+}
+
+.card-test img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill; /* Change to 'contain' to see the difference */
+}
+
 /* --- Header Container --- */
 .main-header {
     position: fixed;
@@ -128,13 +150,8 @@ body.scrolled .header-nav {
     transform-origin: left center;
     transition: transform 200ms ease-in-out;
 }
-.header-nav a:hover::after,
-/* Reveal-on-scroll removed — make class a no-op so cards render normally */
-.reveal-on-scroll {
-    opacity: 1 !important;
-    transform: none !important;
-    filter: none !important;
-    transition: none !important;
+.header-nav a:hover::after {
+    transform: scaleX(1);
 }
 .header-nav a:focus-visible::after {
     transform: scaleX(1);
@@ -330,11 +347,7 @@ body.scrolled .sliding-text-container {
     0% { opacity: 0; transform: translateY(12px) scale(0.995); }
     100% { opacity: 1; transform: translateY(0) scale(1); }
 }
-/* Remove auto animation so IntersectionObserver reveal handles motion consistently */
-.explore-us-grid > * {
-    opacity: 1;
-    transform: none;
-}
+/* Cards will animate in via .reveal-on-scroll + IntersectionObserver */
 
 /* Larger, consistent card sizing and layout (matches reference) */
 .explore-us-grid {
