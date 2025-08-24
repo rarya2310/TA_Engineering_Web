@@ -11,6 +11,27 @@
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/main.js" defer></script>
 </head>
+<style>
+    .content-area > div {
+    /* Default padding for the homepage */
+    padding-top: 3rem; /* 48px */
+    padding-bottom: 3rem; /* 48px */
+}
+
+@media (max-width: 640px) {
+    .content-area > div {
+        /* Padding for mobile homepage */
+        padding-top: 2rem; /* 32px */
+        padding-bottom: 2rem; /* 32px */
+    }
+}
+
+body.inner-page .content-area > div {
+    /* Remove padding on all other pages */
+    padding-top: 0;
+    padding-bottom: 0;
+}
+</style>
 <body class="inner-page">
     <!-- Sliding Text Bar -->
     <div class="sliding-text-container">
@@ -40,7 +61,7 @@
     </header>
 
     <main class="content-area">
-        <div class="bg-[#fffff0]">
+        <div class="bg-[#fffff0] py-8 sm:py-12">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:text-center">
                     <h2 class="text-base font-semibold text-blue-600 tracking-wider uppercase">Our Portfolio</h2>

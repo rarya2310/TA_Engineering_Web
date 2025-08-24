@@ -14,9 +14,9 @@ body {
 
 /* At a Glance Section - Background Image Style */
 .glance-background {
-            background-size: 100% 100%; /* Stretches the image to fill the container */
-            background-position: center;
-            background-repeat: no-repeat;
+    background-size: 100% 100%; /* Stretches the image to fill the container */
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .card-test {
@@ -176,7 +176,7 @@ body.inner-page .header-logo-left {
 /* --- Content Area --- */
 .content-area {
     padding-top: 0; /* no space under header on home */
-    background-color: #f3f4f6;
+    background-color: #fffff0;
 }
 
 /* --- Inner pages (non-home) overrides --- */
