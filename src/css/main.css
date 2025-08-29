@@ -221,6 +221,20 @@ body.scrolled:not(.inner-page) .content-area {
     z-index: 0;
 }
 
+/* === AT A GLANCE SECTION === */
+.glance-background {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.fixed-glance-background {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
 /* === EXPLORE US SECTION === */
 .explore-us {
     background-color: #c8c9cb;
