@@ -80,3 +80,40 @@ document.addEventListener('DOMContentLoaded', () => {
         revealElements.forEach((element) => observer.observe(element));
     }
 });
+
+// === IMAGE CAROUSEL FUNCTIONALITY === 
+let currentSlideIndex = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const dots = document.querySelectorAll('.carousel-dot');
+
+function showSlide(index) {
+    // Hide all slides
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Show current slide
+    if (slides[index]) {
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+    }
+}
+
+function nextSlide() {
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    showSlide(currentSlideIndex);
+}
+
+function previousSlide() {
+    currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+    showSlide(currentSlideIndex);
+}
+
+function currentSlide(index) {
+    currentSlideIndex = index - 1;
+    showSlide(currentSlideIndex);
+}
+
+// Auto-advance carousel every 5 seconds (optional)
+if (slides.length > 0) {
+    setInterval(nextSlide, 5000);
+}

@@ -64,31 +64,67 @@
                             </div>
                         </div>
                         <div class="mt-10 lg:mt-0">
-                            <img class="mx-auto rounded-lg shadow-xl" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932&auto=format&fit=crop" alt="TA Engineering team of skilled engineers and technical experts working on defense projects">
+                            <!-- Image Carousel -->
+                            <div class="relative mx-auto rounded-lg shadow-xl overflow-hidden" id="imageCarousel">
+                                <div class="carousel-container relative w-full h-96">
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-slide active">
+                                        <img class="w-full h-full object-cover" src="../public/images/multicut_machine.jpeg" alt="TA Engineering team working on defense projects">
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="carousel-slide">
+                                        <img class="w-full h-full object-cover" src="../public/images/grills.jpeg" alt="TA Engineering skilled engineers and technical experts">
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="carousel-slide">
+                                        <img class="w-full h-full object-cover" src="../public/images/welder_on_cut.jpeg" alt="TA Engineering industrial facility and manufacturing equipment">
+                                    </div>
+                                    <!-- Slide 4 -->
+                                    <div class="carousel-slide">
+                                        <img class="w-full h-full object-cover" src="../public/images/team2.jpeg" alt="TA Engineering precision equipment and systems assembly">
+                                    </div>
+                                </div>
+                                
+                                <!-- Navigation Arrows -->
+                                <button class="carousel-btn prev-btn absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white p-2 rounded-full transition-all duration-200" onclick="previousSlide()">
+                                    &#8249;
+                                </button>
+                                <button class="carousel-btn next-btn absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white p-2 rounded-full transition-all duration-200" onclick="nextSlide()">
+                                    &#8250;
+                                </button>
+                                
+                                <!-- Dots Indicator -->
+                                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                                    <button class="carousel-dot active w-3 h-3 rounded-full bg-white bg-opacity-70 hover:bg-opacity-90 transition-all duration-200" onclick="currentSlide(1)"></button>
+                                    <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-70 hover:bg-opacity-90 transition-all duration-200" onclick="currentSlide(2)"></button>
+                                    <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-70 hover:bg-opacity-90 transition-all duration-200" onclick="currentSlide(3)"></button>
+                                    <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-70 hover:bg-opacity-90 transition-all duration-200" onclick="currentSlide(4)"></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Maintenance Philosophy Section -->
-                <div class="mt-20">
+                <div class="mt-20 py-16 px-8 rounded-lg" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../public/images/projects_banner_image.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                     <div class="text-center">
-                        <h3 class="text-3xl font-extrabold text-gray-900">Our Maintenance Philosophy</h3>
-                        <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Our maintenance philosophy is a structured, three-tiered approach designed to maximize equipment availability, ensure operational safety, and optimize the total cost of ownership over an asset's lifecycle.</p>
+                        <h3 class="text-3xl font-extrabold text-white">Our Maintenance Philosophy</h3>
+                        <p class="mt-4 text-lg text-gray-200 max-w-3xl mx-auto">Our maintenance philosophy is a structured, three-tiered approach designed to maximize equipment availability, ensure operational safety, and optimize the total cost of ownership over an asset's lifecycle.</p>
                     </div>
                 
                     <!-- Core Pillars -->
                     <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                            <h4 class="text-xl font-bold text-blue-600">Preventive Maintenance</h4>
-                            <p class="mt-2 text-gray-600">A proactive approach to reliability.</p>
+                        <div class="p-6 rounded-lg border border-gray-600" style="background-color: rgba(0,0,0,0.4); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+                            <h4 class="text-xl font-bold text-red-500">Preventive Maintenance</h4>
+                            <p class="mt-2 text-gray-200">A proactive approach to reliability.</p>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                            <h4 class="text-xl font-bold text-blue-600">Corrective Maintenance (Repair)</h4>
-                            <p class="mt-2 text-gray-600">A reactive response to failure.</p>
+                        <div class="p-6 rounded-lg border border-gray-600" style="background-color: rgba(0,0,0,0.4); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+                            <h4 class="text-xl font-bold text-red-500">Corrective Maintenance (Repair)</h4>
+                            <p class="mt-2 text-gray-200">A reactive response to failure.</p>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                            <h4 class="text-xl font-bold text-blue-600">Major Overhaul</h4>
-                            <p class="mt-2 text-gray-600">Restoring assets to original specifications.</p>
+                        <div class="p-6 rounded-lg border border-gray-600" style="background-color: rgba(0,0,0,0.4); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+                            <h4 class="text-xl font-bold text-red-500">Major Overhaul</h4>
+                            <p class="mt-2 text-gray-200">Restoring assets to original specifications.</p>
                         </div>
                     </div>
                 
@@ -96,12 +132,12 @@
                     <div class="mt-16 space-y-12">
                         <!-- 1. Preventive Maintenance -->
                         <div>
-                            <h4 class="text-2xl font-bold text-gray-900">1. Preventive Maintenance (PM): A Proactive Approach to Reliability</h4>
-                            <p class="mt-3 text-lg text-gray-600">Preventive Maintenance consists of scheduled activities performed to prevent equipment failures and mitigate the degradation of components. The primary goal is to address potential issues before they lead to unexpected downtime.</p>
+                            <h4 class="text-2xl font-bold text-white">1. Preventive Maintenance (PM): A Proactive Approach to Reliability</h4>
+                            <p class="mt-3 text-lg text-gray-200">Preventive Maintenance consists of scheduled activities performed to prevent equipment failures and mitigate the degradation of components. The primary goal is to address potential issues before they lead to unexpected downtime.</p>
                             <div class="mt-6 grid md:grid-cols-2 gap-8">
                                 <div>
-                                    <h5 class="font-semibold text-gray-800">Objectives:</h5>
-                                    <ul class="mt-2 list-disc list-inside text-gray-600 space-y-1">
+                                    <h5 class="font-semibold text-red-400">Objectives:</h5>
+                                    <ul class="mt-2 list-disc list-inside text-gray-300 space-y-1">
                                         <li>Maximize equipment uptime and reliability.</li>
                                         <li>Extend the operational lifespan of assets.</li>
                                         <li>Ensure consistent performance and safety standards.</li>
@@ -109,11 +145,11 @@
                                     </ul>
                                 </div>
                                 <div>
-                                    <h5 class="font-semibold text-gray-800">Scope of Activities:</h5>
-                                    <ul class="mt-2 list-disc list-inside text-gray-600 space-y-1">
-                                        <li><strong>Routine Servicing:</strong> Systematic lubrication (oiling, greasing) and fluid level checks.</li>
-                                        <li><strong>Scheduled Component Replacement:</strong> Timely replacement of consumables and wear-and-tear parts.</li>
-                                        <li><strong>Inspection & Conditioning:</strong> Regular inspection, cleaning, rust removal, and application of protective finishes.</li>
+                                    <h5 class="font-semibold text-red-400">Scope of Activities:</h5>
+                                    <ul class="mt-2 list-disc list-inside text-gray-300 space-y-1">
+                                        <li><strong class="text-white">Routine Servicing:</strong> Systematic lubrication (oiling, greasing) and fluid level checks.</li>
+                                        <li><strong class="text-white">Scheduled Component Replacement:</strong> Timely replacement of consumables and wear-and-tear parts.</li>
+                                        <li><strong class="text-white">Inspection & Conditioning:</strong> Regular inspection, cleaning, rust removal, and application of protective finishes.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -121,27 +157,27 @@
                 
                         <!-- 2. Corrective Maintenance -->
                         <div>
-                            <h4 class="text-2xl font-bold text-gray-900">2. Corrective Maintenance (Repair): A Reactive Response to Failure</h4>
-                            <p class="mt-3 text-lg text-gray-600">Corrective Maintenance, also known as Breakdown Maintenance, includes all unscheduled actions performed to restore a failed asset to its operational state. This tier is activated when equipment stops functioning unexpectedly.</p>
+                            <h4 class="text-2xl font-bold text-white">2. Corrective Maintenance (Repair): A Reactive Response to Failure</h4>
+                            <p class="mt-3 text-lg text-gray-200">Corrective Maintenance, also known as Breakdown Maintenance, includes all unscheduled actions performed to restore a failed asset to its operational state. This tier is activated when equipment stops functioning unexpectedly.</p>
                              <div class="mt-6">
-                                <h5 class="font-semibold text-gray-800">Workflow:</h5>
-                                <ul class="mt-2 list-disc list-inside text-gray-600 space-y-2">
-                                    <li><strong>Fault Diagnosis:</strong> Upon system failure, trained on-site personnel perform systematic checks as per the maintenance manual to identify the faulty sub-system.</li>
-                                    <li><strong>On-Site Resolution:</strong> The immediate response is limited to repairs that can be performed efficiently on-site, typically involving the replacement of Line Replaceable Units (LRUs) or minor component adjustments.</li>
-                                    <li><strong>Expert Escalation:</strong> For complex or undiagnosed faults, on-site teams will escalate the issue to system experts at the OEM facility for remote supervision and guidance.</li>
+                                <h5 class="font-semibold text-red-400">Workflow:</h5>
+                                <ul class="mt-2 list-disc list-inside text-gray-300 space-y-2">
+                                    <li><strong class="text-white">Fault Diagnosis:</strong> Upon system failure, trained on-site personnel perform systematic checks as per the maintenance manual to identify the faulty sub-system.</li>
+                                    <li><strong class="text-white">On-Site Resolution:</strong> The immediate response is limited to repairs that can be performed efficiently on-site, typically involving the replacement of Line Replaceable Units (LRUs) or minor component adjustments.</li>
+                                    <li><strong class="text-white">Expert Escalation:</strong> For complex or undiagnosed faults, on-site teams will escalate the issue to system experts at the OEM facility for remote supervision and guidance.</li>
                                 </ul>
                             </div>
                         </div>
                 
                         <!-- 3. Major Overhaul -->
                         <div>
-                            <h4 class="text-2xl font-bold text-gray-900">3. Major Overhaul: Restoring Assets to Original Specifications</h4>
-                            <p class="mt-3 text-lg text-gray-600">An overhaul is a comprehensive, planned maintenance event designed to completely restore an asset to its original performance and reliability standards. It is the most intensive form of maintenance, essentially returning the equipment to a "zero-hour" condition.</p>
+                            <h4 class="text-2xl font-bold text-white">3. Major Overhaul: Restoring Assets to Original Specifications</h4>
+                            <p class="mt-3 text-lg text-gray-200">An overhaul is a comprehensive, planned maintenance event designed to completely restore an asset to its original performance and reliability standards. It is the most intensive form of maintenance, essentially returning the equipment to a "zero-hour" condition.</p>
                              <div class="mt-6">
-                                <h5 class="font-semibold text-gray-800">Execution:</h5>
-                                <ul class="mt-2 list-disc list-inside text-gray-600 space-y-2">
-                                    <li><strong>Timing:</strong> Overhauls are scheduled based on the calculated end-of-life for major mechanical, electrical, or electronic sub-systems.</li>
-                                    <li><strong>Location:</strong> Due to the complexity, overhauls are exclusively performed in a controlled workshop environment (OEM's works or certified facility) equipped with specialized machinery like overhead cranes, welding stations, and industrial painting booths.</li>
+                                <h5 class="font-semibold text-red-400">Execution:</h5>
+                                <ul class="mt-2 list-disc list-inside text-gray-300 space-y-2">
+                                    <li><strong class="text-white">Timing:</strong> Overhauls are scheduled based on the calculated end-of-life for major mechanical, electrical, or electronic sub-systems.</li>
+                                    <li><strong class="text-white">Location:</strong> Due to the complexity, overhauls are exclusively performed in a controlled workshop environment (OEM's works or certified facility) equipped with specialized machinery like overhead cranes, welding stations, and industrial painting booths.</li>
                                 </ul>
                             </div>
                         </div>
