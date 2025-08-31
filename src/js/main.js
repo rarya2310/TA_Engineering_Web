@@ -63,21 +63,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Reveal-on-scroll animation for cards
     const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    console.log('Found reveal elements:', revealElements.length);
+    
     if (revealElements.length) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('in-view');
+                    console.log('Revealing element:', entry.target);
+                    
+                    // Handle transition delays properly
+                    const delay = entry.target.style.transitionDelay || '0ms';
+                    setTimeout(() => {
+                        entry.target.classList.add('in-view');
+                    }, parseFloat(delay) || 0);
+                    
                     observer.unobserve(entry.target); // Stop observing once revealed
                 }
             });
         }, { 
             root: null, 
-            rootMargin: '0px 0px -10% 0px', 
-            threshold: 0.15 
+            rootMargin: '0px 0px -50px 0px', 
+            threshold: 0.1 
         });
 
-        revealElements.forEach((element) => observer.observe(element));
+        revealElements.forEach((element) => {
+            console.log('Observing element:', element);
+            observer.observe(element);
+        });
     }
 });
 
