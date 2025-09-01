@@ -63,13 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Reveal-on-scroll animation for cards
     const revealElements = document.querySelectorAll('.reveal-on-scroll');
-    console.log('Found reveal elements:', revealElements.length);
     
     if (revealElements.length) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    console.log('Revealing element:', entry.target);
                     
                     // Handle transition delays properly
                     const delay = entry.target.style.transitionDelay || '0ms';
