@@ -66,6 +66,9 @@
 </head>
 <body>
     <!-- Sliding Text Bar -->
+    <!-- ========================================
+         SLIDING TEXT ANNOUNCEMENT BAR
+         ======================================== -->
     <div class="sliding-text-container">
         <div class="sliding-text-content">
             <p>Innovative Engineering Solutions Tailored For Your Business.</p>
@@ -76,15 +79,23 @@
         </div>
     </div>
 
-    <!-- Header Container -->
+    <!-- ========================================
+         MAIN HEADER & NAVIGATION
+         Transforms from hero overlay to fixed header
+         ======================================== -->
     <header class="main-header">
         <div class="header-content-wrapper">
+            <!-- Small logo for header state -->
             <img class="header-logo-left" src="../public/images/Logo.png" alt="TA Engineering company logo - defense systems engineering">
+            
+            <!-- Dynamic logo/brand text - scales from hero to header -->
             <a class="logo-text" href="index.html" aria-label="TA Engineering Home">
                 <img class="hero-logo" src="../public/images/Logo.png" alt="TA Engineering - mission-critical defense and naval systems">
                 <span>TA</span>
                 <span>ENGINEERING</span>
             </a>
+            
+            <!-- Main navigation menu -->
             <nav class="header-nav">
                 <a href="services.html">Services</a>
                 <a href="projects.html">Projects</a>
@@ -94,38 +105,61 @@
         </div>
     </header>
 
-    <!-- Main Page Content -->
+    <!-- ========================================
+         MAIN CONTENT AREA
+         ======================================== -->
     <main class="content-area">
-        <!-- Banner -->
+        <!-- ========================================
+             HERO BANNER SECTION
+             Full-screen welcome banner with background image
+             ======================================== -->
         <section class="home-banner" style="background-image: url('../public/images/welder_on.jpeg'); height: 100vh;">
+            <!-- Dark overlay for better text readability -->
             <div class="banner-overlay"></div>
-            <!-- Bottom Corner Logos -->
+            
+            <!-- Government program logos positioned at bottom corners -->
             <div class="absolute inset-x-0 bottom-0 px-4 pb-4 flex justify-between items-end z-10 pointer-events-none">
                 <img src="../public/images/aatmanirbhar-bharat-Logo.png" alt="Aatmanirbhar Bharat initiative logo" class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto opacity-95">
                 <img src="../public/images/make_in_india.png" alt="Make in India program logo" class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto opacity-95">
             </div>
         </section>
 
-        <!-- Trusted By Section -->
+        <!-- ========================================
+             TRUSTED PARTNERS SECTION
+             Showcase of major defense & industrial partners
+             ======================================== -->
         <section class="bg-gray-50 py-12 reveal-on-scroll">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h3 class="text-center text-sm font-semibold text-gray-600 uppercase tracking-wider">Trusted by the Nation's Best</h3>
+                
+                <!-- Partner logos grid -->
                 <div class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6">
+                    <!-- Defense Electronics Partner -->
                     <div class="col-span-1 flex justify-center">
                         <img class="max-h-16" src="../public/images/BEL_LOGO.png" alt="Bharat Electronics Limited (BEL) - trusted defense electronics partner">
                     </div>
+                    
+                    <!-- Aerospace & Defense Manufacturing -->
                     <div class="col-span-1 flex justify-center">
                         <img class="max-h-16" src="../public/images/Godrej-Logo.png" alt="Godrej & Boyce - aerospace and defense manufacturing partner">
                     </div>
+                    
+                    <!-- Defense Components Manufacturing -->
                     <div class="col-span-1 flex justify-center">
                         <img class="max-h-16" src="../public/images/bharat-forge-logo.png" alt="Bharat Forge - defense components and systems manufacturing partner">
                     </div>
+                    
+                    <!-- Naval Shipbuilding Partner -->
                     <div class="col-span-1 flex justify-center">
                         <img class="max-h-16" src="../public/images/mdl_logo.jpg" alt="Mazagon Dock Limited (MDL) - Indian Navy shipbuilding partner">
                     </div>
+                    
+                    <!-- Power Systems Engineering -->
                     <div class="col-span-1 flex justify-center">
                         <img class="max-h-16" src="../public/images/powerica.png" alt="Powerica Limited - power systems and engineering partner">
                     </div>
+                    
+                    <!-- Renewable Energy Infrastructure -->
                     <div class="col-span-1 flex justify-center">
                         <img class="max-h-16" src="../public/images/adani_solar.png" alt="Adani Solar - renewable energy infrastructure partner">
                     </div>
@@ -133,25 +167,38 @@
             </div>
         </section>
         
-        <!-- At a Glance Section -->
+        <!-- ========================================
+             COMPANY STATISTICS SECTION
+             Key metrics and achievements showcase
+             ======================================== -->
         <section class="py-20 bg-white glance-background" style="background-image: url('../public/images/red_black_gray.jpg');">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section heading -->
                 <div class="text-center reveal-on-scroll">
                     <h2 class="text-3xl font-extrabold text-gray-900">Proven Capability at a Glance</h2>
                 </div>
+                
+                <!-- Statistics grid with staggered animations -->
                 <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <!-- Years of experience -->
                     <div class="p-4 reveal-on-scroll" style="transition-delay: 100ms;">
                         <p class="text-5xl font-extrabold text-red-600">17+</p>
                         <p class="mt-2 text-lg font-medium text-gray-600">Years of Proven Experience</p>
                     </div>
+                    
+                    <!-- Team size -->
                     <div class="p-4 reveal-on-scroll" style="transition-delay: 200ms;">
                         <p class="text-5xl font-extrabold text-red-600">250+</p>
                         <p class="mt-2 text-lg font-medium text-gray-600">Skilled Engineers & Experts</p>
                     </div>
+                    
+                    <!-- Geographic reach -->
                     <div class="p-4 reveal-on-scroll" style="transition-delay: 300ms;">
                         <p class="text-5xl font-extrabold text-red-600">50+</p>
                         <p class="mt-2 text-lg font-medium text-gray-600">Operational Sites Across India</p>
                     </div>
+                    
+                    <!-- Defense systems delivered -->
                     <div class="p-4 reveal-on-scroll" style="transition-delay: 400ms;">
                         <p class="text-5xl font-extrabold text-red-600">15+</p>
                         <p class="mt-2 text-lg font-medium text-gray-600">Major Defense Systems Delivered</p>
@@ -160,7 +207,10 @@
             </div>
         </section>
 
-        <!-- About Us Section -->
+        <!-- ========================================
+             ABOUT US OVERVIEW SECTION
+             Company introduction with defense systems background
+             ======================================== -->
         <section class="py-20 reveal-on-scroll" style="background-image: url('../public/images/defence_system.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="py-20">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -176,14 +226,21 @@
             </div>
         </section>
 
-        <!-- Featured Projects Section -->
+        <!-- ========================================
+             FEATURED PROJECTS SHOWCASE
+             Highlight key defense system projects
+             ======================================== -->
         <section class="bg-gray-50 py-20 reveal-on-scroll">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section header -->
                 <div class="text-center">
                     <h2 class="text-3xl font-extrabold text-gray-900">Featured Projects</h2>
                     <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">Providing immediate, undeniable proof of our capabilities on high-stakes, relevant projects.</p>
                 </div>
+                
+                <!-- Project cards grid -->
                 <div class="mt-16 grid gap-12 lg:grid-cols-2">
+                    <!-- PINAKA Launcher System Project -->
                     <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                         <div class="flex-shrink-0">
                             <img class="h-64 w-full object-cover" src="../public/images/pinaka.jpeg" alt="PINAKA multi-barrel rocket launcher system - Indian artillery defense project by TA Engineering">
