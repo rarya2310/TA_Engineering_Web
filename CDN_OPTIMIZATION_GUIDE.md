@@ -8,8 +8,8 @@
 - **Status**: Production-ready with global CDN coverage
 
 ### Local Assets
-- **CSS**: `./css/main.css` (~5KB custom styles)
-- **JavaScript**: `./js/main.js` (~3KB interactions)
+- **CSS**: `./styles/style.css` (~5KB custom styles)
+- **JavaScript**: `./scripts/app.js` (~3KB interactions)
 - **Favicon**: `./favicon.svg` (~2KB)
 
 ## Production CDN Strategies
