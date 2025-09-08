@@ -1,6 +1,6 @@
-# TA Engineering Webapp
+# T.A. Engineering Webapp
 
-This is a modern, multi-page static website for TA Engineering, built with HTML, Tailwind CSS (via CDN), and JavaScript. The project is organized for easy extension and customization.
+This is a modern, multi-page static website for T.A. Engineering, built with HTML, Tailwind CSS (via CDN), and JavaScript. The project is organized for easy extension and customization.
 
 ## Structure
 - `src/` — Main source folder for HTML, CSS, and JS
@@ -22,4 +22,4 @@ Open any HTML file in the `src` folder in your browser. All pages share a consis
 
 ---
 
-© 2024 TA Engineering. All Rights Reserved.
+© 2024 T.A. Engineering. All Rights Reserved.

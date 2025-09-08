@@ -1,4 +1,4 @@
-// TA Engineering Website - Main JavaScript
+// T.A. Engineering Website - Main JavaScript
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     const logoText = document.querySelector('.logo-text');
