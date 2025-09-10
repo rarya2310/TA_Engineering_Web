@@ -9,7 +9,7 @@ The CSS file has been completely reorganized with proper structure and meaningfu
 
 ```css
 /* ==================================================
-   TA ENGINEERING WEBSITE - MAIN STYLESHEET
+   T.A. ENGINEERING WEBSITE - MAIN STYLESHEET
    Defense & Naval Systems Company
    ================================================== */
 
@@ -132,7 +132,7 @@ The CSS file has been completely reorganized with proper structure and meaningfu
 6. **COMPANY STATISTICS SECTION** - Key metrics and achievements
 7. **ABOUT US OVERVIEW SECTION** - Company introduction
 8. **FEATURED PROJECTS SHOWCASE** - Key defense system projects
-9. **EXPLORE TA ENGINEERING SECTION** - Interactive navigation cards
+9. **EXPLORE T.A. ENGINEERING SECTION** - Interactive navigation cards
 
 ### **About Page (about.html):**
 #### **Section Comments Added:**
