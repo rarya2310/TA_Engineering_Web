@@ -32,35 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', handleScroll);
     }
 
-    // Sliding text bar animation
-    const slidingContent = document.querySelector('.sliding-text-content');
-    if (slidingContent) {
-        const messages = slidingContent.querySelectorAll('p');
-        const totalMessages = messages.length;
-        let currentMessageIndex = 0;
-        const messageHeight = 24;
-
-        slidingContent.style.transition = 'transform 0.5s ease-in-out';
-
-        const slideMessages = () => {
-            currentMessageIndex++;
-            slidingContent.style.transform = `translateY(-${currentMessageIndex * messageHeight}px)`;
-
-            // Reset to beginning when we reach the end
-            if (currentMessageIndex === totalMessages - 1) {
-                setTimeout(() => {
-                    slidingContent.style.transition = 'none';
-                    slidingContent.style.transform = 'translateY(0px)';
-                    currentMessageIndex = 0;
-                    slidingContent.offsetHeight; // Force reflow
-                    slidingContent.style.transition = 'transform 0.5s ease-in-out';
-                }, 500);
-            }
-        };
-
-        setInterval(slideMessages, 1500);
-    }
-
+    
     // Reveal-on-scroll animation for cards
     const revealElements = document.querySelectorAll('.reveal-on-scroll');
     
