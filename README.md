@@ -20,7 +20,8 @@ This website serves as a comprehensive digital brochure, providing detailed info
 *   **Modern UI/UX:** The website features a clean, modern design with a professional look and feel.
 *   **Animations and Effects:** Subtle animations and scroll-based reveal effects are used to enhance the user experience.
 *   **Project Portfolio:** A dedicated section to showcase the company's successfully delivered projects.
-*   **SEO Optimized:** Includes meta tags and JSON-LD structured data for better search engine visibility.
+*   **SEO & GEO Optimized:** Includes comprehensive meta tags, structured data (JSON-LD), and clear, semantically structured content to enhance visibility for both traditional search engines and generative AI models.
+*   **Well-Commented Code:** HTML files now include comments for better understanding of sections and elements.
 
 ## Pages
 
@@ -101,7 +102,6 @@ The project is organized into the following directory structure:
 ├── README.md       # This file
 ├── services.html   # Services page
 ├── sitemap.xml     # Sitemap for search engines
-├── sitemap.xsl     # Stylesheet for the sitemap
 ├── terms.html      # Terms of Use page
 └── ... and other miscellaneous files
 ```

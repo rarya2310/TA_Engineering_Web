@@ -72,20 +72,217 @@
         ]
     }
     </script>
-</head>>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Defense & Naval Systems | T.A. Engineering</title>
-    <meta name="description" content="Explore T.A. Engineering’s projects: PINAKA launcher assembly, Indian Navy steering gears, AKASH systems, and sonar winch handling. 15+ major defense systems delivered.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="./scripts/app.js" defer></script>
 </head>
+
+<body class="inner-page">
+    <!-- ========================================
+         SLIDING TEXT ANNOUNCEMENT BAR
+         This section displays a continuously scrolling text bar for announcements or key messages.
+         ======================================== -->
+    <div class="sliding-text-container">
+        <div class="sliding-text-content">
+            <p>Innovative Engineering Solutions Tailored For Your Business.</p>
+            <p>Discover Our Portfolio of Successful Projects.</p>
+            <p>Contact Us Today For A Consultation.</p>
+            <p>Leading the Future of Structural and Civil Engineering.</p>
+            <p>Innovative Engineering Solutions Tailored For Your Business.</p>
+        </div>
+    </div>
+
+    <!-- ========================================
+         MAIN HEADER & NAVIGATION
+         This header section contains the company logo, brand name, and primary navigation links.
+         ======================================== -->
+    <header class="main-header">
+        <div class="header-content-wrapper">
+            <img class="header-logo-left" src="images/Logo.png" alt="T.A. Engineering company logo - defense systems engineering">
+            <a class="logo-text" href="index.html" aria-label="T.A. Engineering Home">
+                <span>T.A.</span>
+                <span>ENGINEERING</span>
+            </a>
+            <nav class="header-nav">
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <!-- Hero Section -->
+        <div class="relative bg-gray-800 py-20 sm:py-28 text-white">
+            <div class="absolute inset-0">
+                <img src="images/projects_banner_image.png" class="glance-background w-full h-full object-cover opacity-30" alt="Abstract defense technology background">
+            </div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl project-animate fade-in-up">Our Portfolio of Excellence</h1>
+                <p class="mt-6 max-w-3xl mx-auto text-lg sm:text-xl text-gray-300 project-animate fade-in-up" style="transition-delay: 150ms;">Engineering the backbone of national security through precision, reliability, and innovation across strategic, naval, and land-based defense systems.</p>
+            </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="py-16 sm:py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Category: Strategic & Air Defense Systems -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-extrabold text-gray-900 border-b-4 border-red-600 pb-4 mb-8 project-animate fade-in-up">Strategic & Air Defense Systems</h2>
+                    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- Project: Agni -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col project-animate fade-in-up">
+                            <img class="aspect-square w-full object-cover" src="images/Agni_8.png" alt="Agni Missile Program Support">
+                            <div class="p-6 flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900">Agni Missile Program Support</h3>
+                                <p class="mt-3 text-base text-gray-600">Providing critical engineering solutions to ensure the mobility and readiness of India's premier strategic missile system.</p>
+                                <p class="mt-4 text-sm font-semibold text-gray-800">Key Contribution:</p>
+                                <p class="text-sm text-gray-600">Specialized modification of transport bogies for the secure rail transport of the Agni launcher, enhancing its strategic deployment capabilities.</p>
+                            </div>
+                        </div>
+                        <!-- Project: Akash -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col project-animate fade-in-up" style="transition-delay: 100ms;">
+                             <img class="aspect-square w-full object-cover" src="images/Akash_8.png" alt="Akash Airforce Launcher">
+                            <div class="p-6 flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900">Akash Airforce Launcher</h3>
+                                <p class="mt-3 text-base text-gray-600">Assembly and integration of the mobile launcher for the Akash surface-to-air missile system, a vital part of India's air defense shield.</p>
+                                 <p class="mt-4 text-sm font-semibold text-gray-800">Strategic Importance:</p>
+                                <p class="text-sm text-gray-600">Ensures the reliability of a formidable aerial defense system designed to protect national assets from airborne threats.</p>
+                            </div>
+                        </div>
+                        <!-- Project: Arihant -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col project-animate fade-in-up" style="transition-delay: 200ms;">
+                             <img class="aspect-square w-full object-cover" src="images/internal_block_arihant_3.png" alt="Arihant Program Internal Block">
+                            <div class="p-6 flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900">'Arihant' Program (Internal Block)</h3>
+                                <p class="mt-3 text-base text-gray-600">Entrusted with the highly sensitive assembly of the Internal Block for India's first indigenous nuclear-powered ballistic missile submarine.</p>
+                                <p class="mt-4 text-sm font-semibold text-gray-800">Project Significance:</p>
+                                <p class="text-sm text-gray-600">A pivotal role in a program of immense national strategic importance, completing India's nuclear triad and showcasing top-tier engineering capability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Naval Systems -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-extrabold text-gray-900 border-b-4 border-blue-600 pb-4 mb-8 project-animate fade-in-up">Naval Systems</h2>
+                    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                         <!-- Project: Steering Gear -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col project-animate fade-in-up">
+                            <img class="aspect-square w-full object-cover" src="images/steering_gear_7.png" alt="Naval Steering Gear">
+                            <div class="p-6 flex-grow"><h3 class="text-xl font-bold text-gray-900">Steering Gear Systems</h3><p class="mt-3 text-base text-gray-600">Precision assembly of advanced steering gear systems, crucial for the maneuverability and control of Indian Navy warships.</p></div>
+                        </div>
+                         <!-- Project: Torpedo Tubes -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col project-animate fade-in-up" style="transition-delay: 100ms;">
+                            <img class="aspect-square w-full object-cover" src="images/torpedo_7.png" alt="Naval Torpedo Tubes">
+                            <div class="p-6 flex-grow"><h3 class="text-xl font-bold text-gray-900">Torpedo Tubes & Oxygen Torpedoes</h3><p class="mt-3 text-base text-gray-600">Manufacturing and assembly support for naval torpedo launch systems and specialized oxygen torpedoes, enhancing the fleet's offensive capabilities.</p></div>
+                        </div>
+                         <!-- Project: Mast -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col project-animate fade-in-up" style="transition-delay: 200ms;">
+                            <img class="aspect-square w-full object-cover" src="images/mast.png" alt="Naval Mast">
+                            <div class="p-6 flex-grow"><h3 class="text-xl font-bold text-gray-900">Naval Mast Fabrication</h3><p class="mt-3 text-base text-gray-600">Fabrication and integration of complex mast structures for naval vessels, which house critical radar, sensor, and communication equipment.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Land Systems & Mobility -->
+                <div class="mb-16">
+                     <h2 class="text-3xl font-extrabold text-gray-900 border-b-4 border-green-600 pb-4 mb-8 project-animate fade-in-up">Land Systems & Mobility</h2>
+                     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- Project: PINAKA -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col project-animate fade-in-up">
+                            <img class="aspect-square w-full object-cover" src="images/pinaka_4.png" alt="PINAKA Multi-Barrel Rocket Launcher">
+                            <div class="p-6 flex-grow"><h3 class="text-xl font-bold text-gray-900">PINAKA Rocket Launcher</h3><p class="mt-3 text-base text-gray-600">Complete assembly and integration of the PINAKA multi-barrel rocket launcher system, a key asset for the Indian Army's long-range artillery firepower.</p></div>
+                        </div>
+                        <!-- Project: Bridge Layers -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col project-animate fade-in-up" style="transition-delay: 100ms;">
+                            <img class="aspect-square w-full object-cover" src="images/bridge_layout_tank_6.png" alt="Bridge Laying Tanks">
+                            <div class="p-6 flex-grow"><h3 class="text-xl font-bold text-gray-900">Bridge Laying Tanks & Short Span Bridges</h3><p class="mt-3 text-base text-gray-600">Assembly of Armored Bridge Laying Tanks (BLT) and deployable Short Span Aluminum Bridges, providing essential mobility to mechanized infantry and armored columns.</p></div>
+                        </div>
+                         <!-- Project: Rohini Radar -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col project-animate fade-in-up" style="transition-delay: 200ms;">
+                            <img class="aspect-square w-full object-cover" src="images/rohini_radar_8.png" alt="Rohini Radar System">
+                            <div class="p-6 flex-grow"><h3 class="text-xl font-bold text-gray-900">Rohini Radar (Aluminum Structures)</h3><p class="mt-3 text-base text-gray-600">Fabrication of high-precision aluminum structures for the Rohini mobile surveillance radar, contributing to its structural integrity and mobility.</p></div>
+                        </div>
+                     </div>
+                </div>
+                
+                 <!-- Category: Defense Infrastructure & Support -->
+                <div>
+                     <h2 class="text-3xl font-extrabold text-gray-900 border-b-4 border-gray-600 pb-4 mb-8 project-animate fade-in-up">Defense Infrastructure & Support</h2>
+                     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- Project: Shelters -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col project-animate fade-in-up">
+                            <img class="aspect-square w-full object-cover" src="images/shelter_2.png" alt="Military Shelters">
+                            <div class="p-6 flex-grow"><h3 class="text-xl font-bold text-gray-900">Specialized Shelters</h3><p class="mt-3 text-base text-gray-600">Design and fabrication of durable, customized shelters for housing sensitive electronic equipment, command centers, and personnel in varied operational environments.</p></div>
+                        </div>
+                        <!-- Project: DG Sets -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col project-animate fade-in-up" style="transition-delay: 100ms;">
+                            <img class="aspect-square w-full object-cover" src="images/DG_set_6.png" alt="Diesel Generator Sets">
+                            <div class="p-6 flex-grow"><h3 class="text-xl font-bold text-gray-900">Diesel Generator (DG) Sets</h3><p class="mt-3 text-base text-gray-600">Assembly and housing of ruggedized Diesel Generator sets, providing reliable and mission-critical power for forward-deployed military assets and installations.</p></div>
+                        </div>
+                         <!-- Project: Racks -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col project-animate fade-in-up" style="transition-delay: 200ms;">
+                            <img class="aspect-square w-full object-cover" src="images/racks_3.png" alt="Equipment Racks">
+                            <div class="p-6 flex-grow"><h3 class="text-xl font-bold text-gray-900">Equipment Racks</h3><p class="mt-3 text-base text-gray-600">Manufacturing of military-grade, shock-proof equipment racks designed to securely house and protect sensitive electronic and communication systems in mobile and static platforms.</p></div>
+                        </div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-heading">Other Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Reach Us</h3>
+                    <p><strong>Registered Office:</strong> Shop No F 133, Devarsh Bldg Poonam Shrushti Chsl, Mira Bhayander Rd Mira Road East, Latiff Park Opp S K Stone, Thane, Thane, Maharashtra, 401107</p>
+                    <p><strong>Corporate Identity Number:</strong> L74899DL1993GOI054155</p>
+                    <p><strong>Telephone No.</strong> 011-26750998; <strong>Fax No:</strong> 011-26750991/ 26129091</p>
+                    <p><strong>For registering any grievances, please visit</strong> <a href="#" class="font-semibold text-blue-600 hover:text-blue-800">T.A. Engineering Grievance portal</a></p>
+                </div>
+            </div>
+            <div class="mt-6 flex items-center justify-between gap-4">
+                <img src="images/aatmanirbhar-bharat-Logo.png" alt="Aatmanirbhar Bharat initiative logo" class="h-8 w-auto">
+                <img src="images/make_in_india.png" alt="Make in India program logo" class="h-8 w-auto">
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright &copy; 2024 T.A. Engineering. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Scroll Animation Logic
+            const projects = document.querySelectorAll('.project-animate');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('project-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            projects.forEach(project => {
+                observer.observe(project);
+            });
+        });
+    </script>
+</body>
+</html>
+
 
 <body class="inner-page">
     <!-- Sliding Text Bar -->
