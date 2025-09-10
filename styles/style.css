@@ -725,3 +725,34 @@ body.inner-page .logo-text {
     transform: translateX(0) translateY(0);
 }
 
+/* ==================================================
+   FIX FOR SLIDING ANNOUNCEMENT BAR ANIMATION
+   ================================================== */
+
+/* 1. Define the keyframe animation for a smooth vertical slide */
+@keyframes slide-vertically {
+  /* Start with the first message */
+  0%    { transform: translateY(0); }
+  22%   { transform: translateY(0); } /* Pause on the first message */
+
+  /* Slide to and pause on the second message */
+  25%   { transform: translateY(-24px); }
+  47%   { transform: translateY(-24px); }
+
+  /* Slide to and pause on the third message */
+  50%   { transform: translateY(-48px); }
+  72%   { transform: translateY(-48px); }
+
+  /* Slide to and pause on the fourth message */
+  75%   { transform: translateY(-72px); }
+  97%   { transform: translateY(-72px); }
+
+  /* Slide to the final item (a copy of the first) to create a seamless loop */
+  100%  { transform: translateY(-96px); }
+}
+
+/* 2. Apply this animation to the sliding content when it's visible */
+body.scrolled .sliding-text-content,
+body.inner-page .sliding-text-content {
+  animation: slide-vertically 15s ease-in-out infinite;
+}
