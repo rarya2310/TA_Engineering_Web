@@ -218,10 +218,14 @@ body.inner-page .sliding-text-container {
 /* Sliding text content styling */
 .sliding-text-content p {
     padding: 0 1rem;
-    text-align: center;
     font-size: 10px;
-    line-height: 24px;
     white-space: nowrap;
+
+    /* Use Flexbox for perfect centering */
+    height: 24px; /* Ensure each item has a consistent height */
+    display: flex;
+    align-items: center;     /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
 }
 
 /* ==================================================
