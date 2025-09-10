@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', handleScroll);
     }
 
-    
     // Reveal-on-scroll animation for cards
     const revealElements = document.querySelectorAll('.reveal-on-scroll');
     
