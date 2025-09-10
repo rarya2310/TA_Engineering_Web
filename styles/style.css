@@ -585,13 +585,13 @@ body.inner-page .logo-text {
 /* Mobile portrait (max-width: 480px) */
 @media (max-width: 480px) {
     body:not(.inner-page):not(.scrolled) .logo-text { 
-        font-size: 9vw;
+        font-size: 8vw;
         max-width: calc(100vw - 100px);
         gap: 0.2rem;
     }
     
     body:not(.inner-page):not(.scrolled) .logo-text .hero-logo {
-        width: 75px;
+        width: 50px;
         height: auto;
     }
     
@@ -611,13 +611,13 @@ body.inner-page .logo-text {
 /* Small mobile (max-width: 380px) */
 @media (max-width: 380px) {
     body:not(.inner-page):not(.scrolled) .logo-text { 
-        font-size: 8vw;
+        font-size: 7vw;
         max-width: calc(100vw - 80px);
         gap: 0.15rem;
     }
     
     body:not(.inner-page):not(.scrolled) .logo-text .hero-logo {
-        width: 40px;
+        width: 35px;
         height: auto;
     }
     
