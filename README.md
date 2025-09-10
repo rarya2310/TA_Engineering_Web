@@ -29,6 +29,9 @@ This website serves as a comprehensive digital brochure, providing detailed info
 *   **Services:** `services.html` - A comprehensive list of the engineering services offered.
 *   **Projects:** `projects.html` - A portfolio of the company's major projects.
 *   **Contact:** `contact.html` - Contact information and a form to get in touch.
+*   **Privacy Policy:** `privacy.html` - The company's privacy policy.
+*   **Terms of Use:** `terms.html` - The terms of use for the website.
+*   **Disclaimer:** `disclaimer.html` - The disclaimer for the website.
 
 ## Technologies and Dependencies
 
@@ -91,10 +94,15 @@ The project is organized into the following directory structure:
 ├── 404.html        # 404 error page
 ├── about.html      # About Us page
 ├── contact.html    # Contact page
+├── disclaimer.html # Disclaimer page
 ├── index.html      # Home page
+├── privacy.html    # Privacy Policy page
 ├── projects.html   # Projects page
 ├── README.md       # This file
 ├── services.html   # Services page
+├── sitemap.xml     # Sitemap for search engines
+├── sitemap.xsl     # Stylesheet for the sitemap
+├── terms.html      # Terms of Use page
 └── ... and other miscellaneous files
 ```
 
