@@ -597,7 +597,7 @@ body.inner-page .logo-text {
     
     body.scrolled:not(.inner-page) .logo-text {
         font-size: 0.9rem;
-        left: calc(0.75rem + 28px + 0.5rem);
+        left: calc(1rem + 32px + 0.5rem);
         gap: 0.8ch;
         max-width: calc(100vw - 180px);
     }
@@ -623,7 +623,7 @@ body.inner-page .logo-text {
     
     body.scrolled:not(.inner-page) .logo-text {
         font-size: 0.8rem;
-        left: calc(0.5rem + 24px + 0.4rem);
+        left: calc(1rem + 32px + 0.4rem);
         gap: 0.6ch;
         max-width: calc(100vw - 160px);
     }
