@@ -48,9 +48,42 @@
       }
     }
     </script>
+        <!-- BreadcrumbList JSON-LD -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.taengineering.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Terms", "item": "https://www.taengineering.com/terms.html" }
+            ]
+        }
+        </script>
+        <!-- ProfessionalService + OfferCatalog JSON-LD -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "T.A. Engineering",
+            "url": "https://www.taengineering.com/",
+            "logo": "https://www.taengineering.com/images/Logo.png",
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Defense Engineering Services",
+                "itemListElement": [
+                    { "@type": "Offer", "name": "Precision Manufacturing", "description": "Structural assemblies, EMI/EMC racks, shelters with PU panels, DG sets." },
+                    { "@type": "Offer", "name": "Embedded OEM Partnership", "description": "At-source assembly, precision fitting, welding, and complex wiring at OEM works." },
+                    { "@type": "Offer", "name": "Field Deployment", "description": "On-site installation, integration, system training, commissioning and acceptance support." },
+                    { "@type": "Offer", "name": "Lifetime Mission Support", "description": "OEM-trained on-site manpower for preventive and breakdown maintenance." },
+                    { "@type": "Offer", "name": "Specialized Assemblies & Lifecycle Support", "description": "EMI/EMC shelters with electronics, DG sets, masts, site acceptance." },
+                    { "@type": "Offer", "name": "Naval Acceptance Testing (HAT/SAT)", "description": "Plan and execute HAT/SAT including EMI/EMC and sea-trial validation." }
+                ]
+            }
+        }
+        </script>
 </head>
 
-<body>
+<body class="inner-page">
     <!-- ========================================
          SLIDING TEXT ANNOUNCEMENT BAR
          This section displays a continuously scrolling text bar for announcements or key messages.

@@ -40,6 +40,29 @@
     <link rel="stylesheet" href="./styles/style.css">
     <script src="./scripts/app.js" defer></script>
 
+        <!-- ProfessionalService + OfferCatalog JSON-LD -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "T.A. Engineering",
+            "url": "https://www.taengineering.com/",
+            "logo": "https://www.taengineering.com/images/Logo.png",
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Defense Engineering Services",
+                "itemListElement": [
+                    { "@type": "Offer", "name": "Precision Manufacturing", "description": "Structural assemblies, EMI/EMC racks, shelters with PU panels, DG sets." },
+                    { "@type": "Offer", "name": "Embedded OEM Partnership", "description": "At-source assembly, precision fitting, welding, and complex wiring at OEM works." },
+                    { "@type": "Offer", "name": "Field Deployment", "description": "On-site installation, integration, system training, commissioning and acceptance support." },
+                    { "@type": "Offer", "name": "Lifetime Mission Support", "description": "OEM-trained on-site manpower for preventive and breakdown maintenance." },
+                    { "@type": "Offer", "name": "Specialized Assemblies & Lifecycle Support", "description": "EMI/EMC shelters with electronics, DG sets, masts, site acceptance." },
+                    { "@type": "Offer", "name": "Naval Acceptance Testing (HAT/SAT)", "description": "Plan and execute HAT/SAT including EMI/EMC and sea-trial validation." }
+                ]
+            }
+        }
+        </script>
+
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -270,6 +293,14 @@
                                 assemble and every system we integrate meets the most stringent standards of quality and
                                 performance, solidifying our role as a trusted name in India's engineering landscape.
                             </p>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>Assembly of transportable EMI/EMC-compliant shelters and equipping them with electronics.</li>
+                                <li>Lifetime product support for systems and subsystems at remote locations with site offices near North-East and North-West borders.</li>
+                                <li>Assembly and testing of standalone and integrated DG sets for Radar, Communication, and Missile Systems; lifetime product support.</li>
+                                <li>Assembly of manual, electrical, and hydraulic masts for Radar and Communication equipment; site maintenance and lifetime product support.</li>
+                                <li>On-site assembly, integration, testing, and end-user site acceptance of equipment.</li>
+                                <li>HAT (Harbour Acceptance Test) and SAT (Ship Acceptance Test) execution for Naval equipment.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
