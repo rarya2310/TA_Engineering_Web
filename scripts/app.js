@@ -60,41 +60,41 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(element);
         });
     }
-});
+    // === IMAGE CAROUSEL FUNCTIONALITY ===
+    // Guard to avoid duplicate declarations on pages without a carousel
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    if (slides.length > 0 && dots.length > 0) {
+        let currentSlideIndex = 0;
 
-// === IMAGE CAROUSEL FUNCTIONALITY === 
-let currentSlideIndex = 0;
-const slides = document.querySelectorAll('.carousel-slide');
-const dots = document.querySelectorAll('.carousel-dot');
+        window.showSlide = function (index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            if (slides[index]) {
+                slides[index].classList.add('active');
+                dots[index].classList.add('active');
+            }
+        };
 
-function showSlide(index) {
-    // Hide all slides
-    slides.forEach(slide => slide.classList.remove('active'));
-    dots.forEach(dot => dot.classList.remove('active'));
-    
-    // Show current slide
-    if (slides[index]) {
-        slides[index].classList.add('active');
-        dots[index].classList.add('active');
+        window.nextSlide = function () {
+            currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+            window.showSlide(currentSlideIndex);
+        };
+
+        window.previousSlide = function () {
+            currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+            window.showSlide(currentSlideIndex);
+        };
+
+        window.currentSlide = function (index) {
+            currentSlideIndex = index - 1;
+            window.showSlide(currentSlideIndex);
+        };
+
+        // Initialize first slide
+        window.showSlide(currentSlideIndex);
+
+        // Auto-advance carousel every 5 seconds (optional)
+        setInterval(window.nextSlide, 5000);
     }
-}
-
-function nextSlide() {
-    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
-    showSlide(currentSlideIndex);
-}
-
-function previousSlide() {
-    currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
-    showSlide(currentSlideIndex);
-}
-
-function currentSlide(index) {
-    currentSlideIndex = index - 1;
-    showSlide(currentSlideIndex);
-}
-
-// Auto-advance carousel every 5 seconds (optional)
-if (slides.length > 0) {
-    setInterval(nextSlide, 5000);
-}
+});

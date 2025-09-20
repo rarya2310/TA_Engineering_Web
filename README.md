@@ -7,6 +7,55 @@
 
 This repository contains the source code for the official website of T.A. Engineering, a leading provider of mission-critical defense and naval systems in India. The website is a modern, multi-page static site designed to showcase the company's expertise, projects, and services.
 
+## SEO and Generative Engine Optimization (GEO)
+
+This site is optimized for both traditional search engines and AI-driven generative engines.
+
+### What we implemented
+
+- Descriptive, unique titles and meta descriptions on every page
+- Canonical URLs to avoid duplicate content
+- Open Graph and Twitter Card metadata for rich previews
+- JSON-LD structured data:
+  - Organization (index)
+  - WebSite with SearchAction (index)
+  - FAQPage (index)
+  - BreadcrumbList (inner pages)
+- Clean, semantic HTML with accessible alt text and headings
+- Root-absolute favicons and sitemap/robots
+
+### Content guidance for GEO
+
+- Keep headlines specific (who/what/where/impact). Avoid vague marketing copy.
+- Use concise paragraphs (2–4 sentences) with strong nouns/verbs over adjectives.
+- Add concrete facts and numbers (dates, counts, locations, standards, model names).
+- Prefer lists and tables for specs; use clear section headings (H2/H3).
+- Maintain consistent terminology (e.g., “PINAKA,” “AKASH,” “Steering Gear Systems”).
+
+### Optional future enhancements
+
+- Add “How we work” process page with stepwise schema (HowTo)
+- Add case studies as Articles with author/date and schema
+- Add multilingual alternate hreflang if you localize content
+
+## Production Tailwind plan
+
+You may see a console warning about cdn.tailwindcss.com. For production, plan to self-host Tailwind via CLI or PostCSS in a future iteration.
+
+Quick path (no framework):
+
+1. Add Tailwind config and dependencies
+2. Build a minified CSS bundle from your HTML sources
+3. Replace the CDN `script` with a `link` to the built CSS
+
+We can wire this up when you’re ready; meanwhile, the CDN is acceptable for a static brochure site.
+
+## Vercel deployment notes
+
+- Project is a static site; no build step required (unless self-hosting Tailwind later)
+- Ensure your production domain is consistent (we use <https://www.taengineering.com> in canonical/OG)
+- Verify social cards render by sharing URLs in Slack/WhatsApp/Twitter (they cache OG images)
+
 ## Project Overview
 
 T.A. Engineering is a key partner in India's 'Make in India' and 'Aatma-Nirbhar' initiatives, with over 17 years of experience in delivering high-stakes engineering solutions. The company specializes in the technical testing, analysis, and integration of complex systems for the defense and naval sectors, including projects like the PINAKA multi-barrel rocket launcher and advanced steering gear systems for the Indian Navy.
@@ -15,55 +64,55 @@ This website serves as a comprehensive digital brochure, providing detailed info
 
 ## Key Features
 
-*   **Multi-page Architecture:** The website includes several pages to provide detailed information about the company.
-*   **Responsive Design:** The layout is fully responsive and optimized for viewing on various devices, including desktops, tablets, and smartphones.
-*   **Modern UI/UX:** The website features a clean, modern design with a professional look and feel.
-*   **Animations and Effects:** Subtle animations and scroll-based reveal effects are used to enhance the user experience.
-*   **Project Portfolio:** A dedicated section to showcase the company's successfully delivered projects.
-*   **SEO & GEO Optimized:** Includes comprehensive meta tags, structured data (JSON-LD), and clear, semantically structured content to enhance visibility for both traditional search engines and generative AI models.
-*   **Well-Commented Code:** HTML files now include comments for better understanding of sections and elements.
+- Multi-page Architecture: The website includes several pages to provide detailed information about the company.
+- Responsive Design: The layout is fully responsive and optimized for viewing on various devices, including desktops, tablets, and smartphones.
+- Modern UI/UX: The website features a clean, modern design with a professional look and feel.
+- Animations and Effects: Subtle animations and scroll-based reveal effects are used to enhance the user experience.
+- Project Portfolio: A dedicated section to showcase the company's successfully delivered projects.
+- SEO & GEO Optimized: Includes comprehensive meta tags, structured data (JSON-LD), and clear, semantically structured content to enhance visibility for both traditional search engines and generative AI models.
+- Well-Commented Code: HTML files now include comments for better understanding of sections and elements.
 
 ## Pages
 
-*   **Home:** `index.html` - An overview of the company with key statistics and featured projects.
-*   **About Us:** `about.html` - Detailed information about the company's history, team, and values.
-*   **Services:** `services.html` - A comprehensive list of the engineering services offered.
-*   **Projects:** `projects.html` - A portfolio of the company's major projects.
-*   **Contact:** `contact.html` - Contact information and a form to get in touch.
-*   **Privacy Policy:** `privacy.html` - The company's privacy policy.
-*   **Terms of Use:** `terms.html` - The terms of use for the website.
-*   **Disclaimer:** `disclaimer.html` - The disclaimer for the website.
+- Home: `index.html` — An overview of the company with key statistics and featured projects.
+- About Us: `about.html` — Detailed information about the company's history, team, and values.
+- Services: `services.html` — A comprehensive list of the engineering services offered.
+- Projects: `projects.html` — A portfolio of the company's major projects.
+- Contact: `contact.html` — Contact information and a form to get in touch.
+- Privacy Policy: `privacy.html` — The company's privacy policy.
+- Terms of Use: `terms.html` — The terms of use for the website.
+- Disclaimer: `disclaimer.html` — The disclaimer for the website.
 
 ## Technologies and Dependencies
 
-*   **HTML5:** For the structure and content of the web pages.
-*   **CSS3:** For custom styling and animations, located in `styles/style.css`.
-*   **JavaScript:** For interactive elements like the image carousel and scroll animations, located in `scripts/app.js`.
-*   **Tailwind CSS:** The website uses Tailwind CSS for its utility-first styling approach. It is included via a CDN script tag in the HTML files.
-*   **Google Fonts:** The 'Inter' font family is used for typography, imported from Google Fonts.
-*   **Font Awesome:** The website uses Font Awesome for icons, included via a CDN link.
+- HTML5: For the structure and content of the web pages.
+- CSS3: For custom styling and animations, located in `styles/style.css`.
+- JavaScript: For interactive elements like the image carousel and scroll animations, located in `scripts/app.js`.
+- Tailwind CSS: Utility-first styling via CDN for now.
+- Google Fonts: The 'Inter' font family for typography.
+- Font Awesome: Icons via CDN link.
 
 ## Design and Styling
 
 ### Typography
 
-*   **Font Family:** 'Inter', sans-serif
-*   **Weights:** 400, 500, 700, 900
+- Font Family: 'Inter', sans-serif
+- Weights: 400, 500, 700, 900
 
 ### Color Palette
 
-*   **Primary Red:** `#dc2626` (Used for accents and calls to action)
-*   **Primary Blue:** `#2563eb` (Used for accents)
-*   **Dark Gray:** `#111827` (Used for backgrounds)
-*   **Medium Gray:** `#4b5563` (Used for text)
-*   **Light Gray:** `#f3f4f6` (Used for content backgrounds)
+- Primary Red: `#dc2626` (accents and CTAs)
+- Primary Blue: `#2563eb` (accents)
+- Dark Gray: `#111827` (backgrounds)
+- Medium Gray: `#4b5563` (text)
+- Light Gray: `#f3f4f6` (content backgrounds)
 
 ### Animations
 
 The website uses custom animations to enhance the user experience:
 
-* **Reveal on Scroll:** Elements fade and slide into view as the user scrolls down the page, powered by the `.reveal-on-scroll` class.
-* **Project Animations:** The projects page features staggered animations for project cards, using the `.project-animate` class.
+- Reveal on Scroll: Elements fade and slide into view as the user scrolls down the page, powered by the `.reveal-on-scroll` class.
+- Project Animations: The projects page features staggered animations for project cards, using the `.project-animate` class.
 
 ## Getting Started
 
@@ -84,7 +133,7 @@ xdg-open index.html
 
 The project is organized into the following directory structure:
 
-```
+```text
 .
 ├── images/         # Contains all the images used in the website
 ├── scripts/        # Contains JavaScript files
