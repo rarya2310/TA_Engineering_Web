@@ -35,6 +35,27 @@
     <!-- Assuming main.css contains your shared styles -->
     <link rel="stylesheet" href="./styles/style.css"> 
     <script src="./scripts/app.js" defer></script>
+        <!-- BreadcrumbList JSON-LD -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.taengineering.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://www.taengineering.com/services.html"
+                }
+            ]
+        }
+        </script>
     
     <!-- JSON-LD structured data -->
     <script type="application/ld+json">
