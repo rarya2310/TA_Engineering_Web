@@ -53,7 +53,7 @@ We can wire this up when you’re ready; meanwhile, the CDN is acceptable for a 
 ## Vercel deployment notes
 
 - Project is a static site; no build step required (unless self-hosting Tailwind later)
-- Ensure your production domain is consistent (we use <https://www.taengineering.com> in canonical/OG)
+- Ensure your production domain is consistent (we use <https://www.taengineering.in> in canonical/OG)
 - Verify social cards render by sharing URLs in Slack/WhatsApp/Twitter (they cache OG images)
 
 ## Project Overview
