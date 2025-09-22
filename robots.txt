@@ -1,4 +1,4 @@
-# robots.txt for https://www.taengineering.com
+# robots.txt for https://www.taengineering.in
 User-agent: *
 Allow: /
 
@@ -10,4 +10,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://www.taengineering.com/sitemap.xml
+Sitemap: https://www.taengineering.in/sitemap.xml
