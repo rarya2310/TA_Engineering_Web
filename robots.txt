@@ -1,13 +1,19 @@
 # robots.txt for https://www.taengineering.in
+# Last updated: 2025-10-03
+
 User-agent: *
 Allow: /
 
-# Optional: allow AI crawlers for GEO/AEO
+# Allow AI crawlers for improved SEO
 User-agent: Google-Extended
 Allow: /
 User-agent: GPTBot
 Allow: /
 User-agent: CCBot
 Allow: /
+
+# Block access to development files
+Disallow: /docs/
+Disallow: /.git/
 
 Sitemap: https://www.taengineering.in/sitemap.xml
