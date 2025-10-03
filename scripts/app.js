@@ -1,4 +1,15 @@
-// T.A. Engineering Website - Main JavaScript
+/*!
+ * T.A. Engineering Website - Main Application JavaScript
+ * Defense & Naval Systems Engineering Solutions
+ * Copyright (c) 2025 T.A. Engineering. All rights reserved.
+ * 
+ * Features:
+ * - Homepage scroll effects and logo transitions
+ * - Reveal-on-scroll animations
+ * - Image carousel functionality
+ * - Responsive navigation
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     const logoText = document.querySelector('.logo-text');
@@ -56,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         revealElements.forEach((element) => {
-            console.log('Observing element:', element);
             observer.observe(element);
         });
     }
